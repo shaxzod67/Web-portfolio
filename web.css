@@ -1,0 +1,516 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 30px;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+ul {
+    width: 25%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+ul li a {
+    color: #21243D;
+    text-align: right;
+    font-family: Heebo;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+ul li a:hover{
+    font-size: 22px;
+    scale: 1.05;
+    transition: .7s;
+}
+#check {
+    display: none;
+}
+
+label #menu,
+#cancel {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    display: none;
+}
+
+.menu {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 50px;
+}
+
+.box-1 {
+    width: calc(100% / 2 - 10px);
+    height: auto;
+    box-sizing: border-box;
+    padding: 20px 50px;
+}
+
+.box-1 h2 {
+    color: var(--Dark-Color, #21243D);
+    font-family: Heebo;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.box-1 p {
+    color: var(--Dark-Color, #21243D);
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.box-1 button {
+    color: #FFF;
+    font-family: Heebo;
+    font-size: 20px;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 10px 10px;
+
+    margin-top: 30px;
+    background-color: #21243D;
+    border-radius: 6px;
+}
+
+.box-1 button:hover {
+    color: #21243D;
+    background-color: #fff;
+    /* scale: 1.05; */
+    transition: .7s;
+    border: 1px solid #21243D;
+}
+
+.box-2 {
+    width: calc(100% / 2 - 10px);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-2 img {
+    width: 50%;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    margin: 50px 0px;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #EDF7FA;
+}
+
+.posts {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.posts p {
+    color: var(--Dark-Color, #21243D);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.posts a {
+    color: var(--Secondry, #00A8CC);
+    text-align: right;
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.boxx {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box-chap {
+    width: calc(100% / 2 - 10px);
+    background-color: #FFF;
+    box-sizing: border-box;
+    padding: 20px 60px;
+}
+
+.box-ong {
+    width: calc(100% / 2 - 10px);
+    background-color: #FFF;
+    box-sizing: border-box;
+    padding: 20px 60px;
+}
+
+.boxx h3 {
+    color: var(--Dark-Color, #21243D);
+    font-family: Heebo;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.boxx span {
+    color: var(--Dark-Color, #21243D);
+    font-family: Heebo;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.boxx p {
+    color: var(--Dark-Color, #21243D);
+    font-family: Heebo;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.box-chap:hover {
+    scale: 1.05;
+    transition: .7s;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 6px;
+}
+
+.box-ong:hover {
+    scale: 1.05;
+    transition: .7s;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 6px;
+    background-color: #21243d3a;
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.work {
+    width: 80%;
+    margin: auto;
+}
+
+.work h3 {
+    color: var(--Dark-Color, #21243D);
+    font-family: Heebo;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+}
+.word {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    margin-top: 50px;
+}
+.word-info{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 50px;
+}
+.word-img img {
+    width: 100%;
+}
+.word-img img:hover{
+    scale: 1.05;
+    transition: .7s;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 6px;
+}
+.word-info h2 {
+    color: var(--Dark-Color, #21243D);
+    font-family: Heebo;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.word-info .pp {
+    color: #21243D;
+    font-family: Heebo;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#input {
+    width: 50%;
+    height: 20%;
+    border-radius: 6px;
+    padding: 0px 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+
+.word-info p {
+    color: var(--Dark-Color, #21243D);
+    font-family: Heebo;
+    font-size: 18px;
+    font-weight: 400;
+}
+footer{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 50px 0px;
+  
+}
+.footer{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.footer a{
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 28px;
+}
+.footer a:hover{
+    scale: 1.15;
+    transition: .7s;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    ul {
+        position: fixed;
+        display: block;
+        background-color: #fff;
+        width: 50%;
+        height: 100vh;
+        right: -100%;
+        box-sizing: border-box;
+        padding: 350px 40px;
+        line-height: 70px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 0px 0px 15px #21243D;
+    }
+
+    label #menu {
+        display: block;
+        color: #21243D;
+        font-size: 25px;
+    }
+
+    #check:checked~ul {
+        right: -100px;
+        transition: 1s;
+    }
+
+    #check:checked~label #menu {
+        display: none;
+    }
+
+    #check:checked~label #cancel {
+        display: block;
+        color: gray;
+        z-index: 1;
+        transition: 1s;
+        font-size: 18px;
+    }
+
+    .box-1 {
+        padding: 20px;
+    }
+
+    .box-2 img {
+        width: 90%;
+    }
+
+    .box-1 h2 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+
+    .box-1 button {
+        font-size: 16px;
+        padding: 10px 10px;
+        margin-top: 20px;
+    }
+
+    .box-chap {
+        padding: 20px;
+    }
+
+    .box-ong {
+        padding: 20px;
+    }
+    .word-info{
+        padding: 0px 10px;
+    }
+    .word-img img {
+        width: 100%;
+    }
+    
+    .word-info h2 {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    #input {
+        width: 50%;
+        height: 10%;
+        font-size: 12px;
+    }
+    .word-info .pp{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .word-info p {
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+    ul {
+        width: 60%;
+        height: 50%;
+        padding: 100px 20px;
+        line-height: 50px;
+        margin-top: 200px;
+    }
+
+    ul li a {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .box-1 {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .box-2 {
+        width: 100%;
+    }
+
+    .box-2 img {
+        width: 90%;
+    }
+
+    .box-1 h2 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 35px;
+    }
+
+    .box-1 button {
+        font-size: 16px;
+        padding: 10px 10px;
+        margin-top: 20px;
+    }
+
+    .posts p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 60px;
+    }
+
+    .box-chap {
+        width: 100%;
+        text-align: center;
+    }
+
+    .box-ong {
+        width: 100%;
+        text-align: center;
+    }
+    .word{
+        grid-template-columns: auto;
+    }
+    .word-info{
+        padding: 0px 10px;
+    }
+    .word-img img {
+        margin-bottom: 50px;
+    }
+    
+    .word-info h2 {
+        font-size: 25px;
+    }
+    #input {
+        width: 50%;
+        height: 20%;
+        font-size: 12px;
+    }
+    .word-info .pp{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .footer a{
+        text-decoration: none;
+        margin-left: 5px;
+        font-size: 25px;
+    }
+}
